@@ -1,0 +1,193 @@
+/* CSS Styles */
+
+#wrapper{
+    max-width:1200px;
+    padding:1em;
+}
+
+.site-header {
+font-family: 'Poppins', sans-serif;    
+}
+
+.site-header a{
+text-decoration: none;
+color:black;
+    font-weight: 500;
+}
+p,h1,h2,h3,h4{
+font-family: 'Poppins', sans-serif;
+font-weight: 300;
+margin-bottom: 1em;
+}
+h1,h2,h3,h4{
+font-weight:600;  
+}
+.site-header h1{
+font-weight: 800;
+font-size: 125%;    
+
+}
+
+
+.site-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+ display: none;
+}
+
+.show-menu{
+  background-color: transparent;
+  border:none;  
+}
+
+.search-programs{
+  min-height: 8em;
+  border:solid 1px #ccc;
+  border-radius: 10px;
+  padding: 1em;    
+  margin-bottom: 1em;    
+}
+
+.search-programs h2{
+font-size: 175%;
+
+}
+.main-menu{   
+display: flex;
+flex-wrap:wrap; 
+list-style: none;
+padding:0;
+justify-content: space-between;    
+}
+.main-menu li{
+flex:0 0 32%;
+  font-family: 'Poppins', sans-serif;    
+  background-color: #748b99;
+  margin-right: 5em;
+  padding: 10px;
+  border-radius:10px;
+margin-top: 10px;    
+}
+
+.main-menu li a:hover{
+color: white;
+}
+
+.dropdown {
+    background-color: #fff;
+    padding: 0;
+    position: absolute;
+    display: none;
+}
+.dropdown li{
+    background-color: #ccc;
+    display: block;
+    border:solid 1px #fff;
+    border-radius: 0px;
+    margin:0;
+    width:150px; 
+}
+
+.dropdown li:hover {
+background-color:#ffcccb; 
+}
+
+.main-menu li:hover .dropdown{
+    display:block;
+}
+
+.main-menu a{
+text-decoration: none;
+color: #000;
+}
+
+.hero-banner{
+  min-height: 12em;
+    background-color: #828282;
+    padding:1em;
+    margin-bottom: 1em;
+
+}
+
+.events img{
+  width: 100%;
+}
+
+.card-link a{
+  color: black;
+  text-decoration: none;    
+}
+
+.card{
+    border: solid 2px #999;
+    border-radius: 10px;
+    overflow: hidden;
+    width:20rem;
+    height: 35rem;
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 700ms;
+} 
+
+.card:hover {
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card:hover{
+    transform: translate(0px, -5px);
+}
+/* I know there's duplicates but for some reason if I close one out it messes up the whole card*/
+
+.card-body{
+padding: 1em;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3em;
+}
+
+.card h2, .card h3, .card h4{
+margin: 0;
+    line-height: 1.7em;
+}
+
+.card img{    
+width:100%;
+height: 200px;    
+}
+
+.programs{
+ display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(320px, 1fr));
+    grid-template-rows: auto auto;  
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+    
+}
+
+footer{
+font-family: 'Poppins', sans-serif;
+margin:50px 0px;    
+}
+@media (min-width:768px){
+    
+    .show-menu{
+     display: none;   
+    }
+    .menu{
+    display: flex;    
+    }
+    .menu li{
+    display: inline;
+    margin-right:2em;    
+    }
+    .layout{
+    display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 1em; 
+    }
+    .card{
+    width: 100%;
+    } 
+
+}
